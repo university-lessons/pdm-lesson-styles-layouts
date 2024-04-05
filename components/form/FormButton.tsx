@@ -1,3 +1,5 @@
+import { Colors } from "@/consts/colors";
+import { Spacing } from "@/consts/spacing";
 import React from "react";
 import {
   StyleSheet,
@@ -20,13 +22,14 @@ export default function FormButton({ title, ...rest }: FormInput) {
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 8,
-    backgroundColor: "yellowgreen",
-    borderRadius: 4,
-    padding: 4,
+    marginTop: Spacing.md,
+    backgroundColor: Colors.primary,
+    borderRadius: 2,
+    padding: 16,
     width: "100%",
   },
   title: {
-    fontWeight: "bold",
+    color: "white",
+    textAlign: "center",
   },
 });

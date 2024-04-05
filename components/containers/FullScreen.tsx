@@ -1,6 +1,7 @@
 import { View, Text, StyleSheet } from "react-native";
 import React, { ReactNode } from "react";
 import { Stack } from "expo-router";
+import { Colors } from "@/consts/colors";
 
 type FullScreenProps = {
   children: ReactNode;
@@ -21,6 +22,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "white",
+    backgroundColor: Colors.primary,
   },
 });
